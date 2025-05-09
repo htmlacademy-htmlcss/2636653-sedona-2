@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-
   <header class="page-header" data-test="header">
     <nav class="navigation">
       <a class="logo" href="#">
@@ -23,12 +23,10 @@
       </ul>
       <ul class="navigation-user">
         <li class="navigation-user"><a class="navigation-user-link" href="#">
-
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="navigation-user"><a class="navigation-user-link" href="#">
-
             <span class="visually-hidden">Избранное</span>
             <span class="visually-hidden">12</span>
           </a>
@@ -36,11 +34,10 @@
       </ul>
       <a class="header-button" href="#">Хочу сюда</a>
     </nav>
-
   </header>
   <main class="main-inner" data-test="main">
     <section class="hotel-selection" data-test=" filter">
-      <h1 class="inner-header-title">Фильтр</h1>
+      <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span>
@@ -97,12 +94,13 @@
       <form action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="housing-selection">
           <legend class="housing-selection-title">Стоимость, ₽:</legend>
-          <input class="min-price" type="number" placeholder="от">
-          <input class="max-price" type="number" placeholder="до">
-          <br>
+          <span class="visually-hidden">От</span>
+          <input class="min-price" type="number" placeholder="0">
+          <span class="visually-hidden">До</span>
+          <input class="max-price" type="number" placeholder="9000">
           <input type="range" min="0" max="9000">
-          <input class="button-apply" type="submit" value="Применить">
-          <input class="button-reset" type="reset" value="Сбросить">
+          <a class="button-apply" href="#">Применить</a>
+          <a class="button-reset" href="#">Сбросить</a>
         </fieldset>
       </form>
     </section>
@@ -111,15 +109,23 @@
       <select name="filter-price">
         <option value="min-price">Сначала дешевые</option>
       </select>
-      <a href="#" class="button button-light">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a href="#" class="button button-light">
-        <span class="visually-hidden">Показать по одной</span>
-      </a>
-      <a class="button" href="#">
-        <span class="visually-hidden">Показать список</span>
-      </a>
+      <ul class="button-show-cards">
+        <li class="button-show-card">
+          <a href="#" class="button button-light">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+        </li>
+        <li class="button-show-card">
+          <a href="#" class="button button-light">
+            <span class="visually-hidden">Показать по одной</span>
+          </a>
+        </li>
+        <li class="button-show-card">
+          <a class="button" href="#">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </li>
+      </ul>
       <ul class="hotels-cards">
         <li class="hotel-card">
           <a href="#">
@@ -130,7 +136,7 @@
           <span class="hotel-name-subtitle">Гостиница</span>
           <span class="hotel-price">От 4000 ₽</span>
           <a class="button-more-details" href="#">Подробнее</a>
-          <input class="button-favorite" type="submit" value="В избранное">
+          <a class="button-favorite" href="#">В избранное</a>
           <p class="stars"> <span class="visually-hidden"> Отель 4 звезды</span>
           </p>
           <p class="hotel-rating">Рейтинг: 8,5</p>
@@ -146,7 +152,7 @@
           <span class="hotel-name-subtitle">Гостиница</span>
           <span class="hotel-price">От 5000 ₽</span>
           <a class="button-more-details" href="#">Подробнее</a>
-          <input class="button-favorite" type="submit" value="В избранное">
+          <a class="button-favorite" href="#">В избранное</a>
           <p class="stars"> <span class="visually-hidden"> Отель 4 звезды</span>
           </p>
           <p class="hotel-rating">Рейтинг: 9,2</p>
@@ -162,7 +168,7 @@
           <span class="hotel-name-subtitle">Гостиница</span>
           <span class="hotel-price">От 2500 ₽</span>
           <a class="button-more-details" href="#">Подробнее</a>
-          <input class="button-favorite" type="submit" value="В избранное">
+          <a class="button-favorite" href="#">В избранное</a>
           <p class="stars"> <span class="visually-hidden"> Отель 3 звезды</span>
           </p>
           <p class="hotel-rating">Рейтинг: 6,9</p>
@@ -178,7 +184,7 @@
           <span class="hotel-name-subtitle">Гостиница</span>
           <span class="hotel-price">От 1500 ₽</span>
           <a class="button-more-details" href="#">Подробнее</a>
-          <input class="button-favorite" type="submit" value="В избранное">
+          <a class="button-favorite" href="#">В избранное</a>
           <p class="stars"> <span class="visually-hidden"> Отель 2 звезды</span>
           </p>
           <p class="hotel-rating">Рейтинг: 5,0</p>
@@ -205,12 +211,12 @@
         </li>
       </ul>
     </section>
-    <section class="subscribe" data-test="subscribe">
-      <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-      <p class="subscribe-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <section class="subscribe-catalog" data-test="subscribe">
+      <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
+      <p class="subscribe-subtitle-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form action="https://echo.htmlacademy.ru/">
         <input type="email" name="email" placeholder="Ваш e-mail">
-        <input type="submit" value="Подписаться">
+        <a class="subscribe-button-catalog" href="#">Подписаться</a>
       </form>
     </section>
   </main>
@@ -232,7 +238,8 @@
     </ul>
     <h3 class="visually-hidden">Телефон</h3>
     <a class="phone" href="tel:+78121212">+7 (812) 812-12-12</a>
-    <a class="copyright" href="https://htmlacademy.ru"> </a>
+    <a class="copyright" href="https://htmlacademy.ru"> <img src="images/HTML_Academy.svg" width="114" height="32"
+        alt="Логотип HTML Academy"></a>
   </footer>
 </body>
 
