@@ -2,7 +2,7 @@
 
 * Студент: [Алена Белоглазова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2636653).
 * Наставник: [Михаил Данюшин](https://htmlacademy.ru/profile/id225742).
-* Сайт: [Мой проект Седона](https://alenabeloglazova.github.io/2636653-sedona-2/).
+* Сайт: [Мой проект Седона](https://github.com/AlenaBeloglazova/2636653-sedona-2-master).
 
 ---
 
