@@ -80,22 +80,27 @@ body {
 }
 
 .navigation {
+  position: relative;
   display: flex;
   gap: 30px;
   margin: 0 auto;
   width: 1060px;
+  min-height: 64px;
   align-items: center;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 .header-logo {
-  position: relative;
-  top: 6px
+  position: absolute;
+  top: 0;
+
 }
 
 .navigation-list {
   margin: 0;
+  margin-left: 170px;
   padding: 0;
   list-style: none;
   width: 624px;
@@ -118,7 +123,7 @@ body {
 .navigation-item-link:hover {
   text-decoration: underline;
   text-decoration-color: #756257;
-  text-underline-offset: 24px;
+  text-underline-offset: 23px;
 }
 
 .navigation-item {
@@ -225,6 +230,7 @@ body {
 
 .advantages-img {
   max-width: 1200px;
+
 }
 
 .advantages-lead {
@@ -372,6 +378,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 64px;
 }
 
 .infrastucture-lead-subtitle {
@@ -418,6 +425,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
+  margin-top: 96px;
 }
 
 .search-lead-subtitle {
@@ -428,8 +436,8 @@ body {
 }
 
 .search-button {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -521,6 +529,7 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 
 }
 
@@ -864,6 +873,7 @@ align-items: center;
   list-style: none;
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 
@@ -884,13 +894,15 @@ align-items: center;
 .button-apply-reset {
   margin: 0;
   margin-top: 56px;
-  display: grid;
-  grid-template-rows: 36px 36px;
+  display: flex;
+  flex-direction: column;
   gap: 32px;
+   max-width: 200px;
+  min-height: 30px;
 }
 
 .button-apply {
-  font-size: 16px;
+    font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -899,6 +911,9 @@ align-items: center;
   background-color: #82B3D3;
   font-family: inherit;
   padding: 8px 50px;
+  max-width: 200px;
+  min-height: 30px;
+
 }
 
 
@@ -1053,6 +1068,7 @@ align-items: center;
   display: block;
   padding: 18px 14px;
   text-align: center;
+
 }
 
 .item-li:first-child .link {
@@ -1061,10 +1077,10 @@ align-items: center;
 
 .pagination-item {
   height: 60px;
-  width: 60px;
   background-color: #82B3D3;
   border-radius: 4px;
   flex-wrap: wrap;
+  min-width: 60px;
 
 }
 
@@ -1080,8 +1096,8 @@ align-items: center;
 
 }
 
-.pagination-item:not(:first-child) .pagination-item:hover,
-.pagination-item:focus {
+.pagination-item:not(:first-child):not(:nth-child(5)):hover,
+.pagination-item:not(:first-child):not(:nth-child(5)):focus {
   background-color: rgba(104, 162, 202, 1);
 }
 
