@@ -100,14 +100,14 @@ body {
 
 .navigation-list {
   margin: 0;
-  margin-left: 170px;
+  margin-left: 155px;
   padding: 0;
   list-style: none;
-  width: 624px;
+  width: 500px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 32px;
 }
 
 .navigation-item-link {
@@ -137,21 +137,26 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+  padding-left: 58px;
+
 }
 
 .navigation-user-link {
-  display: block;
+  display: flex;
   width: 48px;
   height: 48px;
   background-size: 18px 18px;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0;
+  padding: 0;
 
 }
 
 .navigation-user-item {
   margin: 0;
+
   padding: 0;
   position: relative;
 }
@@ -284,8 +289,9 @@ body {
 
 .advantages-item-5 {
   grid-area: 3/1/4/4;
-  display: grid;
   grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .advantages-item-1,
@@ -362,8 +368,8 @@ body {
 
 
 .infrastucture-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   margin: 0 auto;
   padding: 0;
@@ -411,6 +417,8 @@ body {
   text-align: center;
   display: block;
   padding: 0 85px 81px 85px;
+  margin: 0;
+  max-width: 230px;
 }
 
 
@@ -453,7 +461,7 @@ body {
 .form-subscribe {
   display: flex;
   justify-content: center;
-
+  padding-bottom: 104px;
 }
 
 .subscribe {
@@ -461,10 +469,10 @@ body {
   text-align: center;
   background-size: cover;
   padding-top: 96px;
-  padding-bottom: 104px;
 }
 
 .subscribe-title {
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -503,7 +511,7 @@ body {
   border-bottom-left-radius: 4px;
   font: inherit;
   border: none;
-  width: 452px;
+  width: 432px;
 
 }
 
@@ -523,6 +531,7 @@ body {
   padding-top: 40px;
   padding-bottom: 30px;
 }
+
 
 .social-list {
   margin: 0;
@@ -582,7 +591,7 @@ body {
   background-size: cover;
   color: white;
   padding-left: 70px;
-  padding-bottom: 73px;
+
 }
 
 .inner-header-title {
@@ -591,6 +600,7 @@ body {
   font-weight: 700;
   margin: 0;
   margin-bottom: 8px;
+  padding-top: 35px;
 }
 
 .breadcrumbs {
@@ -639,6 +649,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 .infrastucture-selection-list {
@@ -651,6 +662,7 @@ body {
   display: flex;
   width: 1200px;
   gap: 70px;
+  padding-bottom: 7px;
 }
 
 .infrastucture-selection-item:not(:last-child) {
@@ -672,6 +684,12 @@ body {
   border-radius: 4px;
   background-color: #ffffff;
 }
+
+.control-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
 
 .control[type="checkbox"]:active+.control-mark {
   background: url("../images/catalog/tick.png") no-repeat center;
@@ -721,6 +739,10 @@ body {
   border: 0px;
 }
 
+.housing-price {
+  margin-left: 80px;
+}
+
 .housing-selection-list {
   margin: 0;
   padding: 0;
@@ -744,6 +766,7 @@ body {
 
 .select {
   width: 292px;
+  padding-left: 150px;
 }
 
 .select-control {
@@ -779,6 +802,7 @@ body {
 .catalog-title {
   margin: 0;
   text-transform: uppercase;
+  padding-top: 6px;
 }
 
 fieldset {
@@ -786,26 +810,26 @@ fieldset {
   padding: 0;
 }
 
-.input-container{
-display: flex;
-align-items: center;
+.input-container {
+  display: flex;
+  align-items: center;
 }
 
 .placeholder {
-    margin-left: 10px;
-    font-size: 18px;
-    color: #999;
-    position: absolute;
-    transform:translate(-50px, 15px) ;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #999;
+  position: absolute;
+  transform: translate(-50px, 15px);
 }
 
 .range-price {
   margin: 0;
-  width: 143px;
+  width: 122px;
   height: 48px;
   border-radius: 4px;
   border: none;
-  padding-right: 12px;
+  padding: 0;
   padding-left: 20px;
   font-size: 18px;
   font-family: inherit;
@@ -824,7 +848,7 @@ align-items: center;
 }
 
 .range-scale {
-  margin-top: 48px;
+  margin-top: 45px;
   position: relative;
   height: 4px;
   margin-bottom: 70px;
@@ -835,7 +859,7 @@ align-items: center;
   position: absolute;
   background-color: #ffffff;
   height: 4px;
-  width: 226px;
+  width: 200px;
   left: 10px;
 }
 
@@ -864,7 +888,7 @@ align-items: center;
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  left: 195px;
 }
 
 .button-show-cards {
@@ -897,12 +921,12 @@ align-items: center;
   display: flex;
   flex-direction: column;
   gap: 32px;
-   max-width: 200px;
+  max-width: 200px;
   min-height: 30px;
 }
 
 .button-apply {
-    font-size: 16px;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -965,10 +989,6 @@ align-items: center;
   flex-wrap: wrap;
   gap: 20px;
   margin: 0 auto;
-}
-
-.hotels-cards {
-  margin: 0;
   padding: 0;
 }
 
@@ -1059,6 +1079,7 @@ align-items: center;
   list-style: none;
   margin-top: 80px;
   gap: 8px;
+  margin-bottom: 60px;
 }
 
 .pagination-link {
@@ -1081,7 +1102,15 @@ align-items: center;
   border-radius: 4px;
   flex-wrap: wrap;
   min-width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+
+.pagination-more {
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .pagination-item:first-child {
@@ -1090,10 +1119,6 @@ align-items: center;
 
 .pagination-item:nth-child(5) {
   background-color: #ffffff;
-  text-align: center;
-  vertical-align: middle;
-  padding-top: 18px;
-
 }
 
 .pagination-item:not(:first-child):not(:nth-child(5)):hover,
@@ -1111,17 +1136,20 @@ align-items: center;
 }
 
 .subscribe-title-catalog {
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 96px;
+  padding-bottom: 20px;
 }
 
 .subscribe-subtitle-catalog {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin: 0;
   margin-bottom: 54px;
 }
 
@@ -1170,7 +1198,7 @@ align-items: center;
   background-color: rgba(242, 242, 242, 1);
   border-radius: 50%;
   border: none;
-  background-image: url("../images/catalog/close.png");
+  background-image: url("../images/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1215,12 +1243,12 @@ align-items: center;
   border-radius: 4px;
 }
 
-.modal-input:hover{
-background-color: #E5E5E5;
+.modal-input:hover {
+  background-color: #E5E5E5;
 }
 
-.modal-input:focus{
-  outline:solid 3px #83B3D3;
+.modal-input:focus {
+  outline: solid 3px #83B3D3;
   background-color: #E5E5E5;
 }
 
