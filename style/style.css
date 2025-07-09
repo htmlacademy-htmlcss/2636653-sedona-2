@@ -19,10 +19,6 @@ html {
   height: 100%;
 }
 
-img {
-  display: block;
-}
-
 body {
   background-color: #F2F2F2;
   font-size: 18px;
@@ -759,7 +755,7 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 
 }
 
@@ -805,10 +801,19 @@ body {
   padding-top: 6px;
 }
 
-fieldset {
+.infrastucture-selection {
   margin: 0;
   padding: 0;
 }
+
+.housing-selection {
+  margin: 0;
+  padding: 0;
+  }
+
+  .housing-price{
+    padding-left: 81px;
+  }
 
 .input-container {
   display: flex;
@@ -1001,6 +1006,10 @@ fieldset {
   grid-template-rows: repeat(5, auto);
   column-gap: 20px;
   row-gap: 16px;
+}
+
+.hotel-card-img{
+display: block;
 }
 
 .hotel-name {
