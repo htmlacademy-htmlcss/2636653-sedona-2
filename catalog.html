@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="style/style.css">
-  <link rel="icon" href="images/favicon.png">
+  <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
@@ -110,14 +110,14 @@
                 </li>
                 <li class="hotel-selection-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="motel" value="motel"><span
+                    <input class="visually-hidden control-input" type="radio" name="hotel" value="motel"><span
                       class="control-label">Мотель
                       <span class="control-mark"></span></span>
                   </label>
                 </li>
                 <li class="hotel-selection-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="housing" value="apartments"><span
+                    <input class="visually-hidden control-input" type="radio" name="hotel" value="apartments"><span
                       class="control-label">Апартаменты
                       <span class="control-mark"></span></span>
                   </label>
@@ -129,10 +129,10 @@
             <fieldset class="housing-selection housing-price">
               <legend class="housing-selection-title">Стоимость, ₽:</legend>
               <span class="visually-hidden">От</span>
-              <input class="range-price" type="number" name="min-price" value="0" placeholder="от">
+              <input class="range-price range-price-min" type="number" name="min-price" value="0" placeholder="от">
               <span class="placeholder">от</span>
               <span class="visually-hidden">До</span>
-              <input class="range-price" type="number" name="max-price" value="9000" placeholder="до">
+              <input class="range-price range-price-max" type="number" name="max-price" value="9000" placeholder="до">
               <span class="placeholder">до</span>
               <div class="range">
                 <div class="range-scale">
@@ -149,7 +149,7 @@
             </fieldset>
           </form>
           <div class="button-apply-reset">
-            <button class="button button-blue button-apply" type="button">Применить</button>
+            <button class="button button-blue button-apply" type="submit">Применить</button>
             <button class="button button-reset" type="reset">Сбросить</button>
           </div>
         </div>
@@ -168,7 +168,7 @@
           </div>
           <ul class=" button-show-cards">
             <li class="button button-show-card">
-              <a href="#" class="button-show-link">
+              <a href="href=«/catalog.html?grid=cell»" class="button-show-link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
                   <path fill="#000"
                     d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
@@ -177,7 +177,7 @@
               </a>
             </li>
             <li class="button button-show-card">
-              <a href="#" class="button-show-link">
+              <a href="href=«/catalog.html?grid=block»" class="button-show-link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
                   <path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
                 </svg>
@@ -185,7 +185,7 @@
               </a>
             </li>
             <li class="button button-show-card">
-              <a class="button-show-link" href="#">
+              <a class="button-show-link" href="href=«/catalog.html?grid=«list»">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
                   <path fill="#000"
                     d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
@@ -323,7 +323,7 @@
         <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
         <p class="subscribe-subtitle-catalog">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="form-subscribe" action="https://echo.htmlacademy.ru/">
-          <input class="field field-catalog" type="email" name="email" placeholder="Ваш e-mail">
+          <input class="field field-catalog" type="email" name="email" placeholder="Ваш e-mail" required>
           <button class="button-blue subscribe-button" type="button">Подписаться</button>
         </form>
       </section>
