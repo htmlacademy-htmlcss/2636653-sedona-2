@@ -287,8 +287,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 400px);
   grid-template-rows: auto;
-
 }
+
 
 .text-container {
   padding: 112px 85px;
