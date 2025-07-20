@@ -279,22 +279,23 @@ body {
   padding: 0;
 }
 
-.advantages-container {
+
+.advantages-container-items {
+  padding: 0;
+  margin: 0;
+list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 400px);
   grid-template-rows: auto;
-}
 
+}
 .text-container {
   padding: 112px 85px;
 }
 
-
-
 .text-container-img {
 padding: 102px 85px;
 }
-
 
 .advantages-desc {
   text-align: center;
