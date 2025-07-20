@@ -283,18 +283,19 @@ body {
 .advantages-container-items {
   padding: 0;
   margin: 0;
-list-style: none;
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 400px);
   grid-template-rows: auto;
 
 }
+
 .text-container {
   padding: 112px 85px;
 }
 
 .text-container-img {
-padding: 102px 85px;
+  padding: 102px 85px;
 }
 
 .advantages-desc {
@@ -598,7 +599,7 @@ padding: 102px 85px;
 .copyright-footer {
   max-width: 155px;
   width: 100%;
-      padding-top: 5px;
+  padding-top: 5px;
 }
 
 .copyright {
@@ -1066,7 +1067,7 @@ padding: 102px 85px;
   box-shadow: 0 0 0 1px #E5E5E5;
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  grid-template-rows: auto auto auto 1fr auto ;
+  grid-template-rows: auto auto auto 1fr auto;
   column-gap: 20px;
   row-gap: 16px;
   align-items: start;
